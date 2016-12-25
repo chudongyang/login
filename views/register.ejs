@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+</head>
+<body>
+<%
+if(error){%>
+<div class="alert alert-danger" role="alert">
+    <%=error%>
+</div>
+<%}
+%>
+<div class="container">
+    <div class="row clearfix">
+        <div class="column col-md-4 col-md-offset-4">
+            <form method="post" class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="username">用户名:</label>
+                    <input type="text" id="username" name="username" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="password">密码:</label>
+                    <input type="text" id="password" name="password" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="email">邮箱:</label>
+                    <input type="email" id="email" name="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label><input type="checkbox"> 同意<a href="#">"服务条款"</a>和<a href="#">"用户须知"</a>、<a href="#">"隐私权相关政策"</a></label>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">立即注册</button>
+                    <button type="submit" class="btn btn-default pull-right">返回</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
